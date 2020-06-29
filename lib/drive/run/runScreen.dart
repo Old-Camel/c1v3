@@ -1,22 +1,22 @@
-import 'package:c1v3/fitnessApp/UIview/areaListView.dart';
-import 'package:c1v3/fitnessApp/UIview/runningView.dart';
-import 'package:c1v3/fitnessApp/UIview/startLigView.dart';
-import 'package:c1v3/fitnessApp/UIview/titleView.dart';
-import 'package:c1v3/fitnessApp/UIview/workoutView.dart';
+import 'package:c1v3/drive/UIview/areaListView.dart';
+import 'package:c1v3/drive/UIview/runningView.dart';
+import 'package:c1v3/drive/UIview/startLigView.dart';
+import 'package:c1v3/drive/UIview/titleView.dart';
+import 'package:c1v3/drive/UIview/workoutView.dart';
 import 'package:flutter/material.dart';
 
-import '../fintnessAppTheme.dart';
+import '../driveAppTheme.dart';
 
 
-class TrainingScreen extends StatefulWidget {
+class RunScreen extends StatefulWidget {
   final AnimationController animationController;
 
-  const TrainingScreen({Key key, this.animationController}) : super(key: key);
+  const RunScreen({Key key, this.animationController}) : super(key: key);
   @override
-  _TrainingScreenState createState() => _TrainingScreenState();
+  _RunScreenState createState() => _RunScreenState();
 }
 
-class _TrainingScreenState extends State<TrainingScreen>
+class _RunScreenState extends State<RunScreen>
     with TickerProviderStateMixin {
   Animation<double> topBarAnimation;
 

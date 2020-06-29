@@ -1,16 +1,16 @@
-import 'package:c1v3/fitnessApp/models/tabIconData.dart';
-import 'package:c1v3/fitnessApp/traning/trainingScreen.dart';
+import 'package:c1v3/drive/light/lightScreen.dart';
+import 'package:c1v3/drive/models/tabIconData.dart';
+import 'package:c1v3/drive/run/runScreen.dart';
 import 'package:flutter/material.dart';
 import 'bottomNavigationView/bottomBarView.dart';
-import 'fintnessAppTheme.dart';
-import 'myDiary/myDiaryScreen.dart';
+import 'driveAppTheme.dart';
 
-class FitnessAppHomeScreen extends StatefulWidget {
+class driveHomeScreen extends StatefulWidget {
   @override
-  _FitnessAppHomeScreenState createState() => _FitnessAppHomeScreenState();
+  _driveHomeScreenState createState() => _driveHomeScreenState();
 }
 
-class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
+class _driveHomeScreenState extends State<driveHomeScreen>
     with TickerProviderStateMixin {
   AnimationController animationController;
 
@@ -29,7 +29,7 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
 
     animationController =
         AnimationController(duration: Duration(milliseconds: 600), vsync: this);
-    tabBody = MyDiaryScreen(animationController: animationController);
+    tabBody = LightScreen(animationController: animationController);
     super.initState();
   }
 
@@ -84,7 +84,7 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
                 if (!mounted) return;
                 setState(() {
                   tabBody =
-                      MyDiaryScreen(animationController: animationController);
+                      LightScreen(animationController: animationController);
                 });
               });
             } else if (index == 1 || index == 3) {
@@ -92,7 +92,7 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
                 if (!mounted) return;
                 setState(() {
                   tabBody =
-                      TrainingScreen(animationController: animationController);
+                      RunScreen(animationController: animationController);
                 });
               });
             }

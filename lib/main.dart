@@ -1,8 +1,8 @@
 import 'dart:io';
 import "package:c1v3/appTheme.dart";
+import 'package:c1v3/drive/driveAppHomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'fitnessApp/fitnessAppHomeScreen.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         textTheme: AppTheme.textTheme,
         platform: TargetPlatform.iOS,
       ),
-      home: FitnessAppHomeScreen(),
+      home: driveHomeScreen(),
     );
   }
 }

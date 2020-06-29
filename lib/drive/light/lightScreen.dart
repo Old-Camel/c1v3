@@ -1,26 +1,24 @@
-import 'package:c1v3/fitnessApp/UIview/areaListView.dart';
-import 'package:c1v3/fitnessApp/UIview/bodyMeasurement.dart';
-import 'package:c1v3/fitnessApp/UIview/glassView.dart';
-import 'package:c1v3/fitnessApp/UIview/light.dart';
-import 'package:c1v3/fitnessApp/UIview/mediterranesnDietView.dart';
-import 'package:c1v3/fitnessApp/UIview/runningView.dart';
-import 'package:c1v3/fitnessApp/UIview/startLigView.dart';
-import 'package:c1v3/fitnessApp/UIview/titleView.dart';
-import 'package:c1v3/fitnessApp/fintnessAppTheme.dart';
-import 'package:c1v3/fitnessApp/myDiary/mealsListView.dart';
-import 'package:c1v3/fitnessApp/myDiary/waterView.dart';
+import 'package:c1v3/drive/UIview/areaListView.dart';
+import 'package:c1v3/drive/UIview/bodyMeasurement.dart';
+import 'package:c1v3/drive/UIview/glassView.dart';
+import 'package:c1v3/drive/UIview/light.dart';
+import 'package:c1v3/drive/UIview/mediterranesnDietView.dart';
+import 'package:c1v3/drive/UIview/runningView.dart';
+import 'package:c1v3/drive/UIview/startLigView.dart';
+import 'package:c1v3/drive/UIview/titleView.dart';
+import 'package:c1v3/drive/driveAppTheme.dart';
 import 'package:flutter/material.dart';
 
-class MyDiaryScreen extends StatefulWidget {
+class LightScreen extends StatefulWidget {
   final AnimationController animationController;
 
-  const MyDiaryScreen({Key key, this.animationController}) : super(key: key);
+  const LightScreen({Key key, this.animationController}) : super(key: key);
 
   @override
-  _MyDiaryScreenState createState() => _MyDiaryScreenState();
+  _LightScreenState createState() => _LightScreenState();
 }
 
-class _MyDiaryScreenState extends State<MyDiaryScreen>
+class _LightScreenState extends State<LightScreen>
     with TickerProviderStateMixin {
   Animation<double> topBarAnimation;
 

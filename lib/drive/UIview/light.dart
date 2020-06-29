@@ -1,7 +1,7 @@
 import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/material.dart';
 
-import '../fintnessAppTheme.dart';
+import '../driveAppTheme.dart';
 
 class Light extends StatefulWidget {
   final AnimationController mainScreenAnimationController;
