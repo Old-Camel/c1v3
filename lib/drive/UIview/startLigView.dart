@@ -58,7 +58,7 @@ class StartLigView extends StatelessWidget {
                         overflow: Overflow.visible,
                         children: <Widget>[
                           Padding(
-                            padding: const EdgeInsets.only(top: 16, bottom: 16),
+                            padding: const EdgeInsets.only(top: 8, bottom: 16),
                             child: Container(
                               decoration: BoxDecoration(
                                 color: FintnessAppTheme.white,
@@ -147,11 +147,11 @@ class StartLigView extends StatelessWidget {
                           ),
                           Positioned(
                             top: 16,
-                            left: 6,
+                            left: 12,
 //                        bottom: 2,
                             child: SizedBox(
-                              width: 68,
-                              height: 67,
+                              width: 50,
+                              height: 50,
                               child: Image.asset(img),
                             ),
                           )

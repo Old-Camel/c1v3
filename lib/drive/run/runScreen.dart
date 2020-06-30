@@ -194,7 +194,7 @@ class _RunScreenState extends State<RunScreen>
                         padding: EdgeInsets.only(
                             left: 16,
                             right: 16,
-                            top: 16 - 8.0 * topBarOpacity,
+                            top: 16 - 8.0 * topBarOpacity-8,
                             bottom: 12 - 8.0 * topBarOpacity),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,

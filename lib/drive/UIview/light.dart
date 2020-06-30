@@ -83,9 +83,9 @@ class _LightState extends State<Light>
                   ),
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
-                    mainAxisSpacing: 24.0,
-                    crossAxisSpacing: 24.0,
-                    childAspectRatio: 1.0,
+                    mainAxisSpacing: 12.0,
+                    crossAxisSpacing: 12.0,
+                    childAspectRatio: 8/3,
                   ),
                 ),
               ),
@@ -137,7 +137,7 @@ class LightView extends StatelessWidget {
                   BoxShadow(
                       color: FintnessAppTheme.grey.withOpacity(0.4),
                       offset: Offset(1.1, 1.1),
-                      blurRadius: 10.0),
+                      blurRadius: 5.0),
                 ],
               ),
               child: Material(
@@ -151,10 +151,9 @@ class LightView extends StatelessWidget {
                   onTap: () { _load();},
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.only(top: 0, left: 16, right: 16),
+                        padding: EdgeInsets.only(top: 0, left: 6, right: 6),
                         child: Text(
                           text,
                           textAlign: TextAlign.left,
@@ -162,7 +161,7 @@ class LightView extends StatelessWidget {
                             fontFamily:
                             FintnessAppTheme.fontName,
                             fontWeight: FontWeight.w900,
-                            fontSize: 16,
+                            fontSize: 14,
                             letterSpacing: 0.0,
                             color:
                             FintnessAppTheme.darkText,

@@ -59,12 +59,12 @@ class _AreaListViewState extends State<AreaListView>
             transform: new Matrix4.translationValues(
                 0.0, 30 * (1.0 - widget.mainScreenAnimation.value), 0.0),
             child: AspectRatio(
-              aspectRatio: 1.0,
+              aspectRatio: 0.86,
               child: Padding(
                 padding: const EdgeInsets.only(left: 8.0, right: 8),
                 child: GridView(
                   padding:
-                      EdgeInsets.only(left: 16, right: 16, top: 16, bottom: 16),
+                      EdgeInsets.only(left: 16, right: 16, top: 6, bottom: 6),
                   physics: BouncingScrollPhysics(),
                   scrollDirection: Axis.vertical,
                   children: List.generate(
@@ -89,9 +89,9 @@ class _AreaListViewState extends State<AreaListView>
                   ),
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
-                    mainAxisSpacing: 24.0,
-                    crossAxisSpacing: 24.0,
-                    childAspectRatio: 1.0,
+                    mainAxisSpacing: 4.0,
+                    crossAxisSpacing: 6.0,
+                    childAspectRatio: 9.6/3,
                   ),
                 ),
               ),
@@ -111,6 +111,7 @@ class AreaView extends StatelessWidget {
   static AudioCache player = AudioCache(prefix: 'audio/');
   Future<Null> _load() async {
     if(mp3!=null) {
+//      player.
       player.play(mp3);
     }
   }
@@ -145,7 +146,7 @@ class AreaView extends StatelessWidget {
                   BoxShadow(
                       color: FintnessAppTheme.grey.withOpacity(0.4),
                       offset: Offset(1.1, 1.1),
-                      blurRadius: 10.0),
+                      blurRadius: 3.0),
                 ],
               ),
               child: Material(
@@ -161,16 +162,15 @@ class AreaView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.only(top: 0, left: 4, right: 0),
+                        padding: EdgeInsets.only(top: 0, left: 0, right: 0),
                         child: Text(
                           text,
                           textAlign: TextAlign.left,
                           style: TextStyle(
-
                             fontFamily:
                             FintnessAppTheme.fontName,
                             fontWeight: FontWeight.w900,
-                            fontSize: 16,
+                            fontSize: 16.5,
                             letterSpacing: 0.0,
                             color:
                             FintnessAppTheme.darkText,

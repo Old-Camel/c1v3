@@ -132,8 +132,7 @@ class _LightScreenState extends State<LightScreen>
             controller: scrollController,
             padding: EdgeInsets.only(
               top: AppBar().preferredSize.height +
-                  MediaQuery.of(context).padding.top +
-                  24,
+                  MediaQuery.of(context).padding.top -5,
               bottom: 62 + MediaQuery.of(context).padding.bottom,
             ),
             itemCount: listViews.length,
@@ -176,13 +175,13 @@ class _LightScreenState extends State<LightScreen>
                   child: Column(
                     children: <Widget>[
                       SizedBox(
-                        height: MediaQuery.of(context).padding.top,
+                        height: MediaQuery.of(context).padding.top-8,
                       ),
                       Padding(
                         padding: EdgeInsets.only(
                             left: 16,
                             right: 16,
-                            top: 16 - 8.0 * topBarOpacity,
+                            top: 16 - 8.0 * topBarOpacity-8,
                             bottom: 12 - 8.0 * topBarOpacity),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
